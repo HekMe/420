@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>4-2-0</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone-with-data.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-150086090-1"></script>
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-150086090-2"></script>
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-150086090-3"></script>
+    <script type="text/javascript" src="http://www.webglearth.com/v2/api.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+  </head>
+  <body>
+    <div id="420"></div>
+    <canvas id="canvasRegn"></canvas>
+    <div id="1">
+      <div>
+        <p id="" class="text">Time in your timezone</p>
+        <p id="localtime" class="time"></p>
+        <p id="" class="text">Time until your next local 4:20</p>
+        <p id="localcountdown" class="time"></p>
+        <p id="tztimetext" class="text"></p>
+        <p id="tztime" class="time"></p>
+        <p id="tzcountdowntext" class="text"></p>
+        <p id="tzcountdown" class="time"></p>
+      </div>
+      <div id="earth_div"></div>
+      <div id="weather_info">
+        <p id="temp"></p>
+        <p id="humidity"></p>
+        <p id="weather"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+      
+    } else {
+      console.log('wtf🤯')
+    }
+  </script>
+  <script src="/main.js"></script>
+</html>

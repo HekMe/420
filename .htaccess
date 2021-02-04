@@ -1,0 +1,12 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^4\-2\-0\.life$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.4\-2\-0\.life$
+RewriteRule ^/?$ "https\:\/\/4\-2\-0\.life\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^4\-2\-0\.live$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.4\-2\-0\.live$
+RewriteRule ^/?$ "https\:\/\/4\-2\-0\.live\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^4\-2\-0\.today$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.4\-2\-0\.today$
+RewriteRule ^/?$ "https\:\/\/4\-2\-0\.today\/" [R=301,L]
+

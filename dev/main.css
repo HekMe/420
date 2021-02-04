@@ -1,0 +1,232 @@
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+/*html, body {
+  padding: 0; 
+  margin: 0;
+}*/
+
+#canvasRegn {
+  position: absolute;
+  width: 99%;
+  height: 99vh;
+}
+
+#earth_div{
+  top: 0;
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  position: absolute !important;
+  z-index: 1;
+}
+
+#weather_info {
+  position: absolute;
+  width: 300px !important;
+  top: 0;
+  left: 100%;
+  transform: translate(-100%, 0%);
+}
+
+#joint_join {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 5;
+  text-align: left !important;
+}
+
+.time {
+  font-size: 5vw;
+  margin: 15 0;
+  /*height: 70px;
+  transform: translate(-50%, -50%);
+  width: 100%;*/
+}
+.text {
+  font-size: 1vw;
+  margin: 0;
+  /*transform: translate(-50%, -50%);*/
+}
+
+#\31  {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#\31 > div {
+  width: 100%;
+  text-align: center;
+}
+
+#\31 > div:first-child {
+  z-index: 5;
+}
+@media only screen and (max-width:1200px){
+  .time {
+    font-size: 6vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 2vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:1100px){
+  .time {
+    font-size: 7vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 3vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:1000px){
+  .time {
+    font-size: 8vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 4vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:900px){
+  #weather_info {
+    display: none;
+  }
+  .time {
+    font-size: 9vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 5vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:800px){
+  .time {
+    font-size: 10vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 5vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:700px){
+  .time {
+    font-size: 11vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 6vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:600px){
+  .time {
+    font-size: 12vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 6vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:500px){
+  .time {
+    font-size: 13vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 7vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:400px){
+  .time {
+    font-size: 14vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 7vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:300px){
+  .time {
+    font-size: 15vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 8vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
+@media only screen and (max-width:200px){
+  .time {
+    font-size: 16vw;
+    margin: 15 0;
+    /*height: 70px;
+    transform: translate(-50%, -50%);
+    width: 100%;*/
+  }
+  .text {
+    font-size: 8vw;
+    margin: 0;
+    /*transform: translate(-50%, -50%);*/
+  }
+}
